@@ -139,11 +139,11 @@ module.exports = {
 
 - [Vue3 框架](https://cn.vuejs.org/) 
 - [Vue Router v4.x](https://router.vuejs.org/zh/) 
-- [Pinia](https://pinia.vuejs.org/) 
-- [TypeScript](https://www.tslang.cn/index.html) 
+- [Pinia 状态管理库](https://pinia.vuejs.org/) 
+- [TypeScript 类型控制](https://www.tslang.cn/index.html) 
 - [husky 原生 git 钩子](https://typicode.github.io/husky/#/) 
 - [git emoji](https://gitmoji.dev/) 
 
 ## Licence
 
-本项目没有开源协议文档
+开源协议文档请参阅 [LICENSE](https://github.com/liyupi/app-template/blob/master/LICENSE) 
