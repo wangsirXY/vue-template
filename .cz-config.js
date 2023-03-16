@@ -11,7 +11,7 @@ module.exports = {
     },
     { value: "perf", name: "perf:     性能优化" },
     { value: "test", name: "test:     增加测试" },
-    { value: 'ci', name: 'ci:            修改项目继续集成流程' },
+    { value: 'ci', name: 'ci:       修改项目继续集成流程' },
     {
       value: "chore",
       name: "chore:    构建过程或辅助工具的变动(包括但不限于文档、代码生成等)"
