@@ -1,4 +1,4 @@
-# Vue2 项目开发模板
+# [Vue2 项目开发模板](https://github.com/wangsirXY/vue-template/tree/vue2) 
 
 > 使用 Vue2 + Vite3 + Vue Router + Pinia + TypeScript 封装一个纯净的前端模板，大幅提高开发效率！
 >
@@ -147,4 +147,4 @@ module.exports = {
 
 ## Licence
 
-本项目没有开源协议文档
+开源协议文档请参阅 [LICENSE](https://github.com/liyupi/app-template/blob/master/LICENSE) 
