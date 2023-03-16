@@ -28,37 +28,37 @@ default/
 │   └── extensions.json		# 配置vscode推荐插件
 ├── public	# 静态资源
 ├── src	# 根目录
-│   └── @api		# api封装
+│   └── @api	# api封装
 │      └── xxxAPI.ts	# 模块api封装
 │   └── assets	# 静态资源
-│      └── styles		# css样式
+│      └── styles	# css样式
 │   └── router	# 路由配置
 │      └── index.ts
 │   └── stores	# pinia目录
-│      └── @type		# 数据模型
+│      └── @type	# 数据模型
 │         └── xxx.types.ts	# 模块数据模型
 │      └── xxxStore.ts	# 模块store
 │   └── utils	# 工具包目录
 │      └── myAxios.ts	# 封装单例axios
 │      └── request.ts	# 封装axios请求
 │   └── views	# 视图目录
-│   └── App.vue		# 视图入口文件
-│   └── main.ts		# 项目入口文件
-├── .cz-config.js		# husky commit提交类别配置文件
-├── .env.development		# 开发环境
-├── .env.production		# 生产环境
-├── .eslintrc.cjs		# 配置eslint
-├── .gitignore		# 配置忽略文件
-├── .prettierrc.json		# 代码自动格式化规范
+│   └── App.vue	# 视图入口文件
+│   └── main.ts	# 项目入口文件
+├── .cz-config.js	# husky commit提交类别配置文件
+├── .env.development	# 开发环境
+├── .env.production	# 生产环境
+├── .eslintrc.cjs	# 配置eslint
+├── .gitignore	# 配置忽略文件
+├── .prettierrc.json	# 代码自动格式化规范
 ├── commitlint.config.js	# husky继承的规则，限制commit提交type范围
-├── env.d.ts		# vite配置env全局变量
-├── index.html		# 静态入口页面
-├── package-lock.json		# 依赖包名称、版本号、下载地址、及这个模块又依赖了哪些依赖
-├── package.json		# 依赖包配置文件
-├── README.md		# 项目说明文件
-├── tsconfig.json		# ts配置文件
-├── vite.config.ts		# vite全局配置
-├── yarn.lock		# yarn日志
+├── env.d.ts	# vite配置env全局变量
+├── index.html	# 静态入口页面
+├── package-lock.json	# 依赖包名称、版本号、下载地址、及这个模块又依赖了哪些依赖
+├── package.json	# 依赖包配置文件
+├── README.md	# 项目说明文件
+├── tsconfig.json	# ts配置文件
+├── vite.config.ts	# vite全局配置
+├── yarn.lock	# yarn日志
 ```
 
 ## 快速启动
