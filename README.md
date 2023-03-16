@@ -4,9 +4,21 @@
 >
 > 前端项目 By [程序员孤安](https://github.com/wangsirXY) 
 
+## 项目优势
+
+### 开发者
+
+- 可以直接下载集成Vue基本模块的前端框架，或二次开发；
+- 可以自己定制功能并接入系统；
+
+### 学习者
+
+- 可以学到 Vue 的开发方式；
+- 可以学到较为规范的代码目录和格式；
+
 ## 使用
 
-1. Vue2 请移步至 [vue2 分支](https://github.com/wangsirXY/vue-template/tree/vue2) 下载。
+1. Vue2 请移步至 [vue2分支](https://github.com/wangsirXY/vue-template/tree/vue2) 下载。
 2. Vue3 请移步至 [vue3分支](https://github.com/wangsirXY/vue-template/tree/vue3) 下载。
 
 ## 部署
@@ -15,8 +27,12 @@
 
 ### 配置
 
+> 集成项目前置的一些配置。
+
 #### Husky 配置
 
+> [Husky](https://typicode.github.io/husky) 可以用它来检测你的提交信息，运行测试，检测代码等等。Husky支持所有Git钩子。
+>
 > 使用 `git cz` 来代替 `git commit` 来规范 git 提交信息。
 
 1. 安装依赖
@@ -87,19 +103,21 @@
 4. 使用 `husky` 进行强制 git 代码提交规范
 
    ```bash
+   # 安装依赖
    yarn add @commitlint/config-conventional@12.1.4 @commitlint/cli@12.1.4 -D
    yarn add husky@7.0.1 -D
    
+   # 初始化husky
    npx husky install
    ```
 
 5. 在 `package.json` 中新增指令，并执行。
 
-   ```json
-   // 新增指令
+   ```bash
+   # 新增指令
    "prepare": "husky install"
    
-   // 执行命令
+   # 执行命令
    yarn prepare
    ```
 
@@ -109,7 +127,7 @@
    # 新增文件
    npx husky add .husky/commit-msg
    
-   # 写入
+   # 写入配置
    npx --no-install commitlint --edit
    ```
 
@@ -123,7 +141,6 @@
 
 - [Vue 框架](https://cn.vuejs.org/) 
 - [husky 原生 git 钩子](https://typicode.github.io/husky/#/) 
-- 其他要参考的文档
 
 ## Licence
 
