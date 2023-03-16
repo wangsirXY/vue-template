@@ -1,0 +1,5 @@
+@import "./base.css";
+
+.active {
+  color: #f00;
+}
