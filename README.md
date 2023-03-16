@@ -1,39 +1,121 @@
-# Vue 项目开发模板
+# [Vue 项目开发模板](https://github.com/wangsirXY/vue-template) 
 
 > 分别使用 Vue2 和 Vue3 封装一个纯净的前端模板，大幅提高开发效率！
 >
-> By 程序员孤安
+> 前端项目 By [程序员孤安](https://github.com/wangsirXY) 
 
 ## 使用
 
-1. Vue2 请移步至 `vue2` 分支下载。
-2. Vue3 请移步至 `vue3` 分支下载。
-
-## 配置
-
-*这里填写具体的使用说明*
-
-- Git Commit 类别配置
-
-  > 项目引入 `cz-customizable` + `husky` 进行强制 Git 代码提交规范，开发者可以在 `.cz-config.js` 文件中配置 Commit 的提交类别，并在 `commitlint.config.js` 文件中限制提交的类别。
+1. Vue2 请移步至 [vue2 分支](https://github.com/wangsirXY/vue-template/tree/vue2) 下载。
+2. Vue3 请移步至 [vue3分支](https://github.com/wangsirXY/vue-template/tree/vue3) 下载。
 
 ## 部署
 
 > 本项目基于 Vue 开发部署，支持二次开发。
 
+### 配置
+
+#### Husky 配置
+
+> 使用 `git cz` 来代替 `git commit` 来规范 git 提交信息。
+
+1. 安装依赖
+
+   ```bash
+   npm install -g commitizen@4.2.4
+   yarn add cz-customizable@6.3.0 -D
+   ```
+
+2. 在 `package.json` 中进行新增配置
+
+   ```js
+   "config": {
+     "commitizen": {
+       "path": "node_modules/cz-customizable"
+     }
+   }
+   ```
+
+3. 在根目录下新建 `.cz-config.js` 和 `commitlint.config.js` 文件并写入配置
+
+   ```js
+   // .cz-config.js
+   module.exports = {
+     // 可选类型
+     types: [
+       { value: "init", name: "init: 初始化" },
+       ...
+     ],
+     // 消息步骤
+     messages: {
+       type: "请选择提交类型:",
+       customScope: "请输入修改范围(可选):",
+       subject: "请简要描述提交(必填):",
+       body: "请输入详细描述(可选):",
+       footer: "请输入要关闭的issue(可选):",
+       confirmCommit: "确认使用以上信息提交？(y/n/e/h)"
+     },
+     // 跳过问题
+     skipQuestions: ["body", "footer"],
+     // subject文字长度默认是72
+     subjectLimit: 72
+   }
+   ```
+
+   ```js
+   // commitlint.config.js
+   module.exports = {
+     // 继承的规则
+     extends: ["@commitlint/config-conventional"],
+     // 定义规则类型
+     rules: {
+       // type 类型定义，表示 git 提交的 type 必须在以下类型范围内
+       "type-enum": [
+         2,
+         "always",
+         [
+           "init", // 初始化
+           ...
+         ],
+       ],
+       // subject 大小写不做校验
+       "subject-case": [0],
+     },
+   };
+   ```
+
+4. 使用 `husky` 进行强制 git 代码提交规范
+
+   ```bash
+   yarn add @commitlint/config-conventional@12.1.4 @commitlint/cli@12.1.4 -D
+   yarn add husky@7.0.1 -D
+   
+   npx husky install
+   ```
+
+5. 在 `package.json` 中新增指令，并执行。
+
+   ```json
+   // 新增指令
+   "prepare": "husky install"
+   
+   // 执行命令
+   yarn prepare
+   ```
+
+6. 新增 `husky` 配置文件，并往里面写入
+
+   ```bash
+   # 新增文件
+   npx husky add .husky/commit-msg
+   
+   # 写入
+   npx --no-install commitlint --edit
+   ```
+
 ### 依赖
 
-*如果项目中有依赖外部云上资源，需要在下方进行描述*
-
 > 运行项目需要使用 `npm` 或 `yarn` 安装项目依赖。
-
-- Git提交规范
-
-  > 需要全局安装 [`commitizen`](https://www.npmjs.com/package/commitizen) 依赖包
-
-  ```
-  yarn add -g commitizen@4.2.4
-  ```
 
 - RESOURCE：外部资源描述
 
@@ -45,4 +127,4 @@
 
 ## Licence
 
-本项目没有开源协议文档
+开源协议文档请参阅 [LICENSE](https://github.com/liyupi/app-template/blob/master/LICENSE) 
