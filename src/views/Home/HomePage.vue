@@ -1,5 +1,5 @@
 <template>
-  <div>App</div>
+  <div>HomePage</div>
 </template>
 
 <script lang="ts">
@@ -7,7 +7,7 @@ export default {
   props: [],
   data() {
     return {
-      name: "App",
+      name: "HomePage",
     };
   },
   methods: {},
