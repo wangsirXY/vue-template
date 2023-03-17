@@ -1,6 +1,6 @@
-# [Vue2 项目开发模板](https://github.com/wangsirXY/vue-template/tree/vue2) 
+# [Vue2.7 项目开发模板](https://github.com/wangsirXY/vue-template/commits/vue2.7) 
 
-> 使用 Vue2 + Vite3 + Vue Router + Pinia + TypeScript 封装一个纯净的前端模板，大幅提高开发效率！
+> 使用 Vue2.7 + Vite3 + Vue Router + Pinia + TypeScript 封装一个纯净的前端模板，大幅提高开发效率！
 >
 > 前端项目 By [程序员孤安](https://github.com/wangsirXY) 
 
@@ -8,7 +8,7 @@
 
 主要技术：
 
-- Vue2
+- Vue2.7
 - Vite3
 - TypeScript 类型控制
 - Eslint 代码规范控制
@@ -137,7 +137,7 @@ module.exports = {
 
 ## 文档
 
-- [Vue2 框架](https://v2.cn.vuejs.org/) 
+- [Vue2.7 框架](https://blog.vuejs.org/posts/vue-2-7-beta) 
 - [Vite3 构建工具](https://vitejs.cn/) 
 - [Vue Router v3.x](https://v3.router.vuejs.org/zh/) 
 - [Pinia 状态管理库](https://pinia.vuejs.org/) 
