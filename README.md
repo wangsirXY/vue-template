@@ -1,4 +1,4 @@
-# [Vue2.7 项目开发模板](https://github.com/wangsirXY/vue-template/commits/vue2.7) 
+# [Vue2.7 项目开发模板](https://github.com/wangsirXY/vue-template/tree/vue2.7) 
 
 > 使用 Vue2.7 + Vite3 + Vue Router + Pinia + TypeScript 封装一个纯净的前端模板，大幅提高开发效率！
 >
